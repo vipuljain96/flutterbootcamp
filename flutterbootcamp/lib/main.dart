@@ -20,11 +20,9 @@ class MyApp extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      body: Center(
-          child: RaisedButton.icon(
-              onPressed: (){},
-              icon: Icon(Icons.airport_shuttle),
-              label: Text('mail me'))
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Text("hello",style:TextStyle(backgroundColor: Colors.blue)),
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.blueAccent,
