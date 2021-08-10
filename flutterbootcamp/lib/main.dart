@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutterbootcamp/calculator.dart';
 
 void main() {
-  runApp(MaterialApp(home:MyApp()));
+  runApp(MaterialApp(home:Calculator()));
 }
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
