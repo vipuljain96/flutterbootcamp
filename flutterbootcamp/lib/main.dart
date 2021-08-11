@@ -1,5 +1,8 @@
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterbootcamp/FlutterChart.dart';
+import 'package:flutterbootcamp/calculator.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -8,15 +11,26 @@ class MyApp extends StatelessWidget {
   // #docregion build
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp(theme: ThemeData(
+      // Define the default brightness and colors.
+      brightness: Brightness.light,
+      primaryColor: Colors.lightBlue,
+      accentColor: Colors.green,
+      textTheme: TextTheme(
+          headline: TextStyle(fontSize: 32.0, fontStyle: FontStyle.italic)
+      ),
+    ),
       title: 'Startup Name Generator',
-      home: RandomWords(),
+      home: FlutterChart(),
     );
   }
 // #enddocregion build
 }
 // #enddocregion MyApp
-
+class RandomWords extends StatefulWidget {
+  @override
+  State<RandomWords> createState() => _RandomWordsState();
+}
 // #docregion RWS-var
 class _RandomWordsState extends State<RandomWords> {
   final _suggestions = <WordPair>[];
@@ -121,10 +135,7 @@ class _RandomWordsState extends State<RandomWords> {
 }
 // #enddocregion RWS-var
 
-class RandomWords extends StatefulWidget {
-  @override
-  State<RandomWords> createState() => _RandomWordsState();
-}
+
 
 
 
