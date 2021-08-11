@@ -9,7 +9,7 @@ class Calculator extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Flutter Bootcamp',
+          'Calculator',
           style: TextStyle(
             fontSize: 20.0,
             //letterSpacing: 2.0,
