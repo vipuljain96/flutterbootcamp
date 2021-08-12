@@ -60,8 +60,8 @@ class _FlutterChartState extends State<FlutterChart> {
                       FlSpot(3, 5),
                       FlSpot(4, 4)
                     ],
-                    isCurved: true,
-                    barWidth: 10,
+                    isCurved: false,
+                    barWidth: 2,
                     colors: [
                       Colors.black,
                     ],
