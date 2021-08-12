@@ -5,7 +5,7 @@ import 'database.dart';
 var dogDao = new DogDao();
 var database;
 void main() async{
-  database = dogDao.openDb();
+  //database = dogDao.openDb();
   runApp(MaterialApp(home: MyApp()));
 }
 
@@ -18,7 +18,35 @@ class MyApp extends StatelessWidget {
       title: 'add dog',
       home: Scaffold(
         appBar: AppBar(title: Text('insert dog'),),
-        body: AddDogForm(),
+        body: Column(children:<Widget>[
+          AddDogForm(),
+          Expanded(
+            child: FutureBuilder<List>(
+              future: dogDao.getDogs(),
+             // initialData: List(),
+              builder: (context, snapshot) {
+                return snapshot.hasData
+                    ? ListView.builder(
+                  itemCount: snapshot.data?.length,
+                  itemBuilder: (_, int position) {
+                    final item = snapshot.data?[position];
+                    //get your item data here ...
+                    return Card(
+                      child: ListTile(
+                        title: Text(
+                            "id: " + (snapshot.data?[position].id).toString() +"       DogName: " + snapshot.data?[position].name + "       Age: " + (snapshot.data?[position].age).toString()),
+                      ),
+                    );
+                  },
+                )
+                    : Center(
+                  child: CircularProgressIndicator(),
+                );
+              },
+            ),
+          ),
+
+        ]),
       ),
     );
   }
@@ -51,12 +79,17 @@ class _AddDogFormState extends State<AddDogForm> {
   }
   void _getDogs(){
     dogDao.getDogs();
+    setState(() {
+
+    });
+
   }
 
   @override
   Widget build(BuildContext context) {
 
     return Container(
+      padding: EdgeInsets.all(10),
       child: Form(
         child: Column(
           children: <Widget>[

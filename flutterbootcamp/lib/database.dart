@@ -47,7 +47,7 @@ class DogDao {
           id: mapRows[position]['id'],
           name: mapRows[position]['name'],
           age: mapRows[position]['age']);
-      print(dog.toString());
+      (dog.toString());
       return dog;
     });
   }
