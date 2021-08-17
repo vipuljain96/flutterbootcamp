@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f62adcf0-1e90-4361-8c7b-b9caee33788c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/Users/vj/.android/avd/Nexus_5_API_28.avd]" />
+  <component name="ProjectId" id="1vLSxyFEfXpmJC7GgFptZK96242" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f62adcf0-1e90-4361-8c7b-b9caee33788c" name="Default Changelist" comment="" />
+      <created>1626340129823</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626340129823</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="63" y="214" width="1200" height="567" key="AVDManager" timestamp="1626341768710">
+      <screen x="0" y="25" width="1440" height="807" />
+    </state>
+    <state x="63" y="214" width="1200" height="567" key="AVDManager/0.25.1440.807@0.25.1440.807" timestamp="1626341768710" />
+    <state width="1358" height="192" key="GridCell.Tab.0.bottom" timestamp="1626342537952">
+      <screen x="0" y="25" width="1440" height="807" />
+    </state>
+    <state width="1358" height="192" key="GridCell.Tab.0.bottom/0.25.1440.807@0.25.1440.807" timestamp="1626342537952" />
+    <state width="1358" height="192" key="GridCell.Tab.0.center" timestamp="1626342537951">
+      <screen x="0" y="25" width="1440" height="807" />
+    </state>
+    <state width="1358" height="192" key="GridCell.Tab.0.center/0.25.1440.807@0.25.1440.807" timestamp="1626342537951" />
+    <state width="1358" height="192" key="GridCell.Tab.0.left" timestamp="1626342537951">
+      <screen x="0" y="25" width="1440" height="807" />
+    </state>
+    <state width="1358" height="192" key="GridCell.Tab.0.left/0.25.1440.807@0.25.1440.807" timestamp="1626342537951" />
+    <state width="1358" height="192" key="GridCell.Tab.0.right" timestamp="1626342537952">
+      <screen x="0" y="25" width="1440" height="807" />
+    </state>
+    <state width="1358" height="192" key="GridCell.Tab.0.right/0.25.1440.807@0.25.1440.807" timestamp="1626342537952" />
+    <state x="229" y="25" key="SettingsEditor" timestamp="1626342511015">
+      <screen x="0" y="25" width="1440" height="807" />
+    </state>
+    <state x="229" y="25" key="SettingsEditor/0.25.1440.807@0.25.1440.807" timestamp="1626342511015" />
+    <state x="385" y="193" key="run.anything.popup" timestamp="1626341113939">
+      <screen x="0" y="25" width="1440" height="807" />
+    </state>
+    <state x="385" y="193" key="run.anything.popup/0.25.1440.807@0.25.1440.807" timestamp="1626341113939" />
+  </component>
+</project>
