@@ -119,7 +119,14 @@ class _MyAppState extends State<MyApp> {
           'https://api.openweathermap.org/data/2.5/weather?APPID=$Id&lat=${lat.toString()}&lon=${lon.toString()}'));
       final forecastResponse = await http.get(Uri.parse(
           'https://api.openweathermap.org/data/2.5/forecast?APPID=$Id&lat=${lat.toString()}&lon=${lon.toString()}'));
-       print(weatherResponse.body);
+      // print(weatherResponse.body);
+       var jsondata = jsonDecode(weatherResponse.body);
+       var country = jsondata['name'];
+       var weathermain = jsondata['weather']['main'];
+       var temp = (jsondata['main']['temp']).toString();
+       var iconname = jsondata['weather']['icon'];
+       var icon = 'https://openweathermap.org/img/w/$iconname.png';
+       print(jsondata['weather']);
       if (weatherResponse.statusCode == 200 &&
           forecastResponse.statusCode == 200) {
         return setState(() {

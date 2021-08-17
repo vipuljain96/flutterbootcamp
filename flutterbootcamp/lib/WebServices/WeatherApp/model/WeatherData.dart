@@ -1,11 +1,13 @@
 class WeatherData {
+  final String? id;
   final DateTime date;
   final String name;
   final double temp;
   final String main;
   final String icon;
 
-  WeatherData({required this.date,required this.name,required this.temp,required this.main,required this.icon});
+  WeatherData({this.id,required this.date,required this.name,required this.temp,required this.main,required this.icon});
+
 
   factory WeatherData.fromJson(Map<String, dynamic> json) {
     return WeatherData(
